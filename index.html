@@ -8,29 +8,40 @@
     <title>PaintJs</title>
   </head>
   <body>
-    <canvas class="canvas"></canvas>
-    <div class="controls">
-      <div class="controls__range">
-        <input
-          type="range"
-          class="range"
-          min="0.1"
-          max="10"
-          step="0.1"
-          value="3"
-        />
+    <div class="wrapper">
+      <div class="controls_left">
+        <ul class="controls__container">
+          <li class="controls__colors"></li>
+          <li class="controls__colors"></li>
+          <li class="controls__colors"></li>
+          <li class="controls__colors"></li>
+          <li class="controls__colors"></li>
+          <li class="controls__colors"></li>
+          <li class="controls__colors"></li>
+          <li class="controls__colors"></li>
+          <li class="controls__colors"></li>
+          <li class="controls__colors"></li>
+        </ul>
       </div>
-      <div class="controls__btns">
-        <button class="drawMode">draw mode</button>
-        <button class="drawSave">save</button>
+      <div class="canvas_center">
+        <canvas class="canvas"></canvas>
+        <div class="controls">
+          <div class="controls__range">
+            <input
+              type="range"
+              class="range"
+              min="0.1"
+              max="10"
+              step="0.1"
+              value="3"
+            />
+          </div>
+          <div class="controls__btns">
+            <button class="drawMode">draw mode</button>
+            <button class="drawSave">save</button>
+          </div>
+        </div>
       </div>
-      <ul class="controls__container">
-        <li class="controls__colors"></li>
-        <li class="controls__colors"></li>
-        <li class="controls__colors"></li>
-        <li class="controls__colors"></li>
-        <li class="controls__colors"></li>
-      </ul>
     </div>
 
     <script src="js/app.js"></script>

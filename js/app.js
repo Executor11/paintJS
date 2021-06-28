@@ -6,15 +6,16 @@ const drawSave = document.querySelector(".drawSave");
 
 // canvas
 const canvas = document.querySelector(".canvas");
-const ctx = canvas.getContext("2d");
+canvas.width = 700;
+canvas.height = 600;
+
 //painting
 let paintingMode = false;
 let fillMode = false;
 let color = "white";
 
 // context
-canvas.width = 700;
-canvas.height = 600;
+const ctx = canvas.getContext("2d");
 
 ctx.lineWidth = 3;
 ctx.strokeStyle = color;
@@ -23,7 +24,18 @@ ctx.fillStyle = color;
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 // apply colors to items
-const colors = ["red", "green", "blue", "yellow", "black"];
+const colors = [
+  "red",
+  "green",
+  "blue",
+  "yellow",
+  "black",
+  "white",
+  "orange",
+  "purple",
+  "brown",
+  "cyan",
+];
 [...controlsColors].forEach((e, i) => {
   e.style.backgroundColor = colors[i];
   e.addEventListener("click", () => (ctx.strokeStyle = color = colors[i]));
